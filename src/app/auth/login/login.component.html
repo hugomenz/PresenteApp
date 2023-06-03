@@ -1,3 +1,35 @@
-<p>
-  login works!
-</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">User login</h2>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="text" class="form-control" formControlName="email" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                formControlName="password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary d-block mx-auto">
+              Enviar
+            </button>
+          </form>
+          <button class="btn btn-info mt-3 d-block mx-auto">
+            Login With Google
+          </button>
+          <p class="mt-3 text-center">
+            Don't have an account yet?
+            <a href="/auth/register">Register here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

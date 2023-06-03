@@ -1,3 +1,37 @@
-<p>
-  register works!
-</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">User registration</h2>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="text" class="form-control" formControlName="email" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                formControlName="password"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary d-block mx-auto">
+              Send
+            </button>
+          </form>
+          <button class="btn btn-info mt-3 d-block mx-auto">
+            Register With Google
+          </button>
+          <p class="text-center mt-3">
+            Do you have an existing account?
+            <a href="/auth/login" class="text-decoration-underline text-primary"
+              >Log in here</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
